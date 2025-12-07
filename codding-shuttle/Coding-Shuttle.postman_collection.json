@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "7c47e822-10b1-454b-af50-2f612d6c0c07",
+		"name": "Coding-Shuttle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43649541",
+		"_collection_link": "https://sourav-4431801.postman.co/workspace/Sourav's-Workspace~82d56951-6c65-438e-8b65-d6b0c037d4af/collection/43649541-7c47e822-10b1-454b-af50-2f612d6c0c07?action=share&source=collection_link&creator=43649541"
+	},
+	"item": [
+		{
+			"name": "Module2",
+			"item": [
+				{
+					"name": "create-new-employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"abc\",\r\n    \"email\" : \"abc@gmail.com\",\r\n    \"age\" : 23,\r\n    \"dateOfJoining\" : \"2024-11-19\",\r\n    \"isActive\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
