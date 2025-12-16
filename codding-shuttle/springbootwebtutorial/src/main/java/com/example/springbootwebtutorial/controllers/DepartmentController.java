@@ -39,7 +39,7 @@ public class DepartmentController {
     }
 
     @DeleteMapping(path = "/{departmentId}")
-    public ResponseEntity<Boolean> delateDepartmentById (@PathVariable(name = "departmentId") Long id) {
+    public ResponseEntity<Boolean> deleteDepartmentById (@PathVariable(name = "departmentId") Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(departmentService.deleteDepartmentById(id));
     }
 }
