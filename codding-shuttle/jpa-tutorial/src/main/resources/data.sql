@@ -1,5 +1,25 @@
 INSERT INTO test.product_table (price, quantity, sku, title_x)
 VALUES
-(12, 4.4, 'parle734', 'Parle Buscuit'),
+(12.4, 4, 'parle734', 'Parle Buscuit'),
 (14.4, 1, 'pepsi123', 'Pepsi'),
-(16.4, 3, 'pepsi156', 'Mazza');
+(16.4, 3, 'pepsi156', 'Mazza'),
+(10.5, 2, 'lays001', 'Lays Classic'),
+(20.2, 1, 'coke002', 'Coca Cola'),
+(18.75, 3, 'sprite003', 'Sprite'),
+(25.4, 2, 'thumsup004', 'Thums Up'),
+(30.1, 5, 'goodday005', 'Good Day Biscuit'),
+(15.2, 4, 'oreo006', 'Oreo Biscuit'),
+(22.8, 2, 'bourbon007', 'Bourbon Biscuit'),
+(35.5, 1, 'redbull008', 'Red Bull'),
+(45.4, 6, 'kitkat009', 'KitKat'),
+(28.9, 3, 'dairymilk010', 'Dairy Milk'),
+(12.6, 5, 'fivestar011', 'Five Star'),
+(55.6, 2, 'tropicana012', 'Tropicana Juice'),
+(40.3, 4, 'real013', 'Real Fruit Juice'),
+(8.5, 10, 'maggi014', 'Maggi Noodles'),
+(60.3, 1, 'kelloggs015', 'Kelloggs Cornflakes'),
+(75.5, 2, 'bru016', 'Bru Coffee'),
+(90.9, 1, 'nescafe017', 'Nescafe Classic'),
+(110.1, 2, 'amul018', 'Amul Butter'),
+(65.4, 3, 'britannia019', 'Britannia Cake'),
+(150.2, 1, 'fortune020', 'Fortune Oil');

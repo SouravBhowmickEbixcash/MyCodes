@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @SpringBootTest
 class JpaTutorialApplicationTests {
@@ -45,6 +46,13 @@ class JpaTutorialApplicationTests {
 		System.out.println("Products : " + products);
 		System.out.println("Products By Created At After : " + productByCreatedAtAfter);
 		System.out.println("Products By Quantity and Price : " + productsByQuantityAndPrice);
+	}
+
+
+	@Test
+	void getSingleFromRepository(){
+		Optional<Product> product = productRepository.findByTitleAndPrice("Pepsi", BigDecimal.valueOf(14.40));
+		product.ifPresent(System.out :: println);
 	}
 
 }

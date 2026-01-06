@@ -2,11 +2,18 @@ package com.tomato.app;
 
 import java.util.List;
 
+import com.tomato.app.factories.NowOrderFactory;
+import com.tomato.app.factories.OrderFactory;
+import com.tomato.app.factories.ScheduledOrderFactory;
+import com.tomato.app.managers.OrderManager;
 import com.tomato.app.managers.RestaurantManager;
 import com.tomato.app.models.Cart;
 import com.tomato.app.models.MenuItem;
+import com.tomato.app.models.Order;
 import com.tomato.app.models.Restaurant;
 import com.tomato.app.models.User;
+import com.tomato.app.services.NotificationService;
+import com.tomato.app.strategies.PaymentStrategy;
 
 public class TomatoApp {
 	
@@ -60,5 +67,51 @@ public class TomatoApp {
     			user.getCart().addItem(menu);
     		}
     	}
+    }
+    
+    
+    public Order checkoutNow(User user, String orderType, PaymentStrategy paymentStrategy) {
+    	return checkout(user, orderType, paymentStrategy, new NowOrderFactory());
+    }
+    
+    
+    public Order checkoutScheduled(User user, String orderType, PaymentStrategy paymentStrategy, String scheduleTime) {
+    	return checkout(user, orderType, paymentStrategy, new ScheduledOrderFactory(scheduleTime));
+    }
+    
+    
+    private Order checkout(User user, String orderType, PaymentStrategy paymentStrategy, OrderFactory orderFactory) {
+    	if(user.getCart() == null) return null;
+    	
+    	Cart cart = user.getCart();
+    	Restaurant restaurant = cart.getRestaurant();
+    	List<MenuItem> menuItems = cart.getItems();
+    	double cost = cart.getTotalCost();
+    	
+    	Order order = orderFactory.createOrder(user, cart, restaurant, menuItems, paymentStrategy, cost, orderType);
+    	OrderManager.getInstance().addOrder(order);
+    	
+    	return order;
+    }
+    
+    
+    public void payForOrder(User user, Order order) {
+    	boolean isPayed = order.processPayment();
+    	
+    	if(isPayed) {
+    		 NotificationService.notify(order);
+    		 user.getCart().clear();
+    	}
+    }
+    
+    
+    public void printUserCart(User user) {
+        System.out.println("Items in cart:");
+        System.out.println("------------------------------------");
+        for (MenuItem item : user.getCart().getItems()) {
+            System.out.println(item.getCode() + " : " + item.getName() + " : ₹" + item.getPrice());
+        }
+        System.out.println("------------------------------------");
+        System.out.println("Grand total : ₹" + user.getCart().getTotalCost());
     }
 }
