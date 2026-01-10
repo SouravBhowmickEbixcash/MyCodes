@@ -1,6 +1,7 @@
 package com.example.jpaTutorial.jpa_tutorial.repositories;
 
 import com.example.jpaTutorial.jpa_tutorial.entities.Product;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -14,7 +15,9 @@ import java.util.Optional;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByTitle(String title);
 
-    List<Product> findByTitleOrderByPrice(String title);
+    List<Product> findByOrderByPrice();
+
+    List<Product> findBy(Sort sort);
 
     List<Product> findByCreatedAtAfter(LocalDateTime after);
 
