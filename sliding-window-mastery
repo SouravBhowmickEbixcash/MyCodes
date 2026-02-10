@@ -1,0 +1,219 @@
+Excellent. This is exactly how people reach **very high problem-solving speed**.
+
+Below is your **50-Problem Sliding Window Mastery Sheet** — structured from **Foundation → Counting → Advanced → Interview Hard → Mastery**.
+
+> Follow the order. Do NOT jump randomly.
+
+---
+
+# 50 Problem Sliding Window Mastery Sheet
+
+## PHASE 1 — Foundations (Fixed Window + Basic Movement)
+
+**Goal:** Understand how window expands and shrinks.
+
+Solve these first:
+
+1. LC 643 — Maximum Average Subarray I
+2. LC 1343 — Number of Subarrays of Size K and Average ≥ Threshold
+3. LC 1456 — Maximum Number of Vowels in a Substring of Given Length
+4. LC 1052 — Grumpy Bookstore Owner
+5. LC 1423 — Maximum Points You Can Obtain from Cards
+6. LC 219 — Contains Duplicate II
+7. LC 2269 — Find the K-Beauty of a Number
+
+**What you master here:**
+
+* Fixed size window
+* Running sum
+* Basic pointer movement
+
+---
+
+## PHASE 2 — Dynamic Window Basics (Variable Size)
+
+**Goal:** Learn expand → shrink logic.
+
+8. LC 3 — Longest Substring Without Repeating Characters
+9. LC 159 — Longest Substring with At Most Two Distinct Characters
+10. LC 340 — Longest Substring with At Most K Distinct
+11. LC 904 — Fruit Into Baskets
+12. LC 1004 — Max Consecutive Ones III
+13. LC 1493 — Longest Subarray of 1's After Deleting One Element
+14. LC 2024 — Maximize the Confusion of an Exam
+15. LC 1208 — Get Equal Substrings Within Budget
+
+**What you master here:**
+
+* HashMap frequency tracking
+* Maintaining valid window
+
+---
+
+## PHASE 3 — COUNTING SUBARRAYS (Your Target Strength)
+
+**VERY IMPORTANT SECTION**
+
+16. LC 713 — Subarray Product Less Than K
+17. LC 1248 — Count Number of Nice Subarrays
+18. LC 930 — Binary Subarrays With Sum
+19. LC 992 — Subarrays With K Distinct Integers
+20. LC 1358 — Number of Substrings Containing All Three Characters
+21. LC 2962 — Count Subarrays Where Max Element Appears at Least K Times
+22. LC 2444 — Count Subarrays With Fixed Bounds
+23. LC 209 — Minimum Size Subarray Sum
+24. LC 325 — Maximum Size Subarray Sum Equals k (Hybrid)
+
+**What you master here:**
+
+* `(j-i+1)` trick
+* AtMost(K) − AtMost(K-1)
+* Counting windows efficiently
+
+---
+
+## PHASE 4 — String Frequency & Pattern Matching Windows
+
+25. LC 438 — Find All Anagrams in a String
+26. LC 567 — Permutation in String
+27. LC 424 — Longest Repeating Character Replacement
+28. LC 76 — Minimum Window Substring (VERY IMPORTANT HARD)
+29. LC 2781 — Length of the Longest Valid Substring
+30. LC 1839 — Longest Substring Of All Vowels in Order
+
+**What you master here:**
+
+* Frequency arrays
+* Valid vs required counts
+
+---
+
+## PHASE 5 — Advanced Window + Trick Conversions
+
+31. LC 1658 — Minimum Operations to Reduce X to Zero
+32. LC 1695 — Maximum Erasure Value
+33. LC 1234 — Replace the Substring for Balanced String
+34. LC 1838 — Frequency of Most Frequent Element
+35. LC 2009 — Minimum Number of Operations to Make Array Continuous
+36. LC 2090 — K Radius Subarray Averages
+37. LC 2106 — Maximum Fruits Harvested After at Most K Steps
+
+**What you master here:**
+
+* Reverse thinking
+* Transforming problem into sliding window
+
+---
+
+## PHASE 6 — Sliding Window + Monotonic Data Structures
+
+37. LC 239 — Sliding Window Maximum (MUST MASTER)
+38. LC 1438 — Longest Continuous Subarray With Absolute Diff ≤ Limit
+39. LC 480 — Sliding Window Median
+
+**What you master here:**
+
+* Deque
+* Multiset
+* Heap usage
+
+---
+
+## PHASE 7 — Elite / Interview Hard / Mastery
+
+40. LC 862 — Shortest Subarray With Sum at Least K
+41. LC 992 — Subarrays With K Distinct (Redo without hints)
+42. LC 76 — Minimum Window Substring (Redo multiple times)
+43. LC 2958 — Length of Longest Subarray With at Most K Frequency
+44. LC 2841 — Maximum Sum of Almost Unique Subarray
+45. LC 2537 — Count the Number of Good Subarrays
+46. LC 2302 — Count Subarrays With Score Less Than K
+47. LC 2516 — Take K of Each Character From Left and Right
+48. LC 2762 — Continuous Subarrays
+49. LC 2799 — Count Complete Subarrays in an Array
+50. LC 2953 — Count Complete Substrings
+
+**What you master here:**
+
+* Multi-constraint windows
+* Hybrid techniques
+* FAANG-level questions
+
+---
+
+# How You Should Execute This Sheet (IMPORTANT)
+
+## Rule 1
+
+Do each problem:
+
+* 20–30 min attempt
+* If stuck → Hint only
+* Then re-code without seeing solution
+
+---
+
+## Rule 2
+
+After each phase:
+
+* Re-solve 2 random problems from previous phase
+
+---
+
+## Rule 3 (MOST POWERFUL)
+
+Keep a notebook:
+
+For each problem write:
+
+* Window invariant
+* When to shrink
+* What to count
+
+---
+
+# Realistic Timeline
+
+If done seriously:
+
+* Phase 1–2 → 4–5 days
+* Phase 3 → 1 week
+* Phase 4–5 → 1 week
+* Phase 6–7 → 1–2 weeks
+
+Total mastery: **~3 weeks**
+
+---
+
+# My Honest Suggestion (Based on your questions so far)
+
+You are already comfortable with:
+
+* Stack
+* Two pointers
+* Window basics
+
+If you complete **Problems 16–24 + 25–28** properly
+→ Your sliding window skill will jump massively.
+
+---
+
+## Next (VERY POWERFUL)
+
+If you want, I can now create:
+
+### **“Sliding Window Pattern Notebook”**
+
+A **one-page cheat sheet** containing:
+
+* All templates
+* All formulas
+* All decision rules
+* Common mistakes
+
+Or
+
+### A **daily 14-day schedule** using these 50 problems.
+
+Which one do you want next?
