@@ -1,0 +1,278 @@
+Perfect. I’ll give you **deep, senior-level, scenario-based interview questions only** — no answers.
+These are designed for **3–8+ years Java backend/microservices roles**.
+
+---
+
+# 🔥 CORE JAVA (Advanced + Scenario-Based)
+
+### JVM & Memory
+
+1. Explain how JVM memory is structured. What happens internally when a new object is created?
+2. How does G1 GC work internally? When would you prefer ZGC over G1?
+3. How do you diagnose a memory leak in production?
+4. What is Metaspace? How is it different from PermGen?
+5. What happens if Metaspace is full?
+6. Explain escape analysis and its impact on performance.
+7. What is biased locking? When is it removed?
+8. What happens during a Full GC? Why is it dangerous in low-latency systems?
+9. How do you analyze a heap dump?
+10. Difference between stack overflow and out-of-memory error.
+
+---
+
+### Concurrency & Multithreading
+
+11. How does `synchronized` work internally?
+12. Difference between `volatile` and `AtomicInteger`.
+13. Explain Java Memory Model (JMM).
+14. What is happens-before relationship?
+15. How does ReentrantLock differ from synchronized?
+16. Explain ThreadLocal use cases and memory leak risks.
+17. How does ConcurrentHashMap work internally (Java 8+)?
+18. What is ForkJoinPool and work-stealing?
+19. Difference between Callable and Runnable.
+20. How would you design a thread-safe LRU cache?
+21. How do you prevent deadlock?
+22. Explain optimistic vs pessimistic locking.
+23. What is false sharing?
+24. What happens if two threads modify a non-volatile variable?
+25. How does CompletableFuture work internally?
+
+---
+
+### Java 8+ Advanced
+
+26. What happens internally in Stream API?
+27. Why are streams not reusable?
+28. Parallel streams — when should you NOT use them?
+29. How does Optional improve API design?
+30. What are functional interfaces?
+31. Difference between map and flatMap?
+32. How lambda expressions are implemented internally?
+33. How default methods work in interfaces?
+
+---
+
+### Design & OOP
+
+34. SOLID principles with real backend examples.
+35. How would you design a payment processing system?
+36. When to use abstract class vs interface?
+37. Strategy pattern real-world example.
+38. Factory vs Abstract Factory.
+39. Singleton pitfalls in distributed systems.
+40. How would you design rate limiter in Java?
+41. How do you design a high-performance logging system?
+
+---
+
+# 🌱 SPRING BOOT (Deep & Internal)
+
+### Core Internals
+
+42. What happens internally when Spring Boot starts?
+43. How does @SpringBootApplication work?
+44. Explain component scanning internally.
+45. What is ApplicationContext?
+46. How dependency injection works internally?
+47. What are BeanPostProcessors?
+48. What is Spring lifecycle of a bean?
+49. How does @Conditional work?
+50. Difference between @Component, @Service, @Repository.
+51. How does Spring resolve circular dependency?
+52. Why constructor injection is preferred?
+53. What is AOP? How proxy works (JDK vs CGLIB)?
+54. When does Spring create proxies?
+55. What is self-invocation problem in Spring AOP?
+
+---
+
+### Configuration & Production
+
+56. How do you externalize configuration securely?
+57. How does Spring Boot auto-configuration work internally?
+58. How do you override auto-configuration?
+59. What is Spring Factories?
+60. How do profiles work?
+61. How do you secure secrets in production?
+62. How do you reduce startup time?
+63. How do you enable graceful shutdown?
+
+---
+
+# 🗄 SPRING DATA JPA / HIBERNATE (Deep)
+
+### Core Internals
+
+64. What is persistence context?
+65. Difference between EntityManager and Session.
+66. What is first-level cache?
+67. What is second-level cache?
+68. What is dirty checking?
+69. What is flush and when does it occur?
+70. Difference between save() and saveAndFlush().
+71. What is N+1 problem?
+72. How to solve N+1 problem?
+73. What is lazy loading? How does it work internally?
+74. What is proxy object in Hibernate?
+75. What is detached entity?
+76. What is merging?
+77. What happens if you access lazy field outside transaction?
+
+---
+
+### Advanced DB Topics
+
+78. Optimistic vs pessimistic locking.
+79. How @Transactional works internally?
+80. Propagation types with real scenario examples.
+81. Isolation levels and phantom read scenario.
+82. How to handle high concurrency updates?
+83. What is batching in Hibernate?
+84. How to improve JPA performance?
+85. What is DTO projection?
+86. Native query vs JPQL?
+87. When to avoid JPA and use JDBC?
+
+---
+
+# 🔐 SPRING SECURITY (Very Deep)
+
+### Core Security
+
+88. How does Spring Security filter chain work?
+89. What is SecurityContext?
+90. What is AuthenticationManager?
+91. How does JWT authentication flow work?
+92. How to implement stateless authentication?
+93. What is OncePerRequestFilter?
+94. How to implement custom authentication provider?
+95. What happens when you disable CSRF?
+96. Difference between OAuth2 and JWT?
+97. How refresh token works?
+
+---
+
+### Advanced Security
+
+98. How to secure microservices using OAuth2?
+99. How to implement role hierarchy?
+100. How to prevent replay attack?
+101. How to secure REST APIs in distributed system?
+102. What is method-level security?
+103. How do you implement multi-tenancy security?
+104. How do you handle token revocation?
+105. How to protect against brute force attack?
+
+---
+
+# 🧩 MICROSERVICES (Advanced & Scenario-Based)
+
+### Architecture
+
+106. Monolith vs Microservices trade-offs?
+107. How do services communicate?
+108. REST vs gRPC?
+109. How do you handle distributed transactions?
+110. What is Saga pattern?
+111. Orchestration vs choreography?
+112. How to implement idempotency?
+113. What is circuit breaker?
+114. How does Resilience4j work?
+115. What is service mesh?
+
+---
+
+### Scaling & Reliability
+
+116. How do you scale stateless services?
+117. How to handle cascading failure?
+118. What is bulkhead pattern?
+119. How do you design high-availability system?
+120. How to design for zero downtime deployment?
+121. Blue-green vs Canary deployment?
+122. How to handle versioning of APIs?
+123. How to prevent database bottleneck?
+124. How to implement rate limiting in distributed system?
+125. How to design distributed caching?
+
+---
+
+### Observability
+
+126. How do you implement centralized logging?
+127. What is distributed tracing?
+128. How to correlate logs across services?
+129. What is OpenTelemetry?
+130. How to monitor JVM in production?
+
+---
+
+# 📨 KAFKA / EVENT-DRIVEN (Important for You)
+
+131. How Kafka ensures message ordering?
+132. What is partition?
+133. How consumer group works?
+134. What happens if consumer crashes?
+135. How to ensure exactly-once delivery?
+136. How to implement retry mechanism?
+137. How to handle poison messages?
+138. What is idempotent producer?
+139. How to design event schema evolution?
+140. How to avoid tight coupling in event-driven system?
+
+---
+
+# 🗄 DATABASE & PERFORMANCE
+
+141. How indexing works internally?
+142. What is composite index?
+143. How to analyze slow query?
+144. Explain execution plan.
+145. What is connection pooling?
+146. HikariCP internals?
+147. How to tune PostgreSQL for high load?
+148. CAP theorem?
+149. ACID vs BASE?
+150. When to use NoSQL?
+
+---
+
+# 🧠 SYSTEM DESIGN SCENARIOS (Hard)
+
+151. Design WhatsApp messaging service.
+152. Design OTP service.
+153. Design notification system (email + SMS + push).
+154. Design URL shortener.
+155. Design rate limiter for API gateway.
+156. Design audit logging system.
+157. Design high-performance authentication system.
+158. Design multi-tenant SaaS system.
+159. Design distributed file upload service.
+160. Design payment reconciliation system.
+
+---
+
+# ⚡ PRODUCTION SCENARIOS (VERY IMPORTANT)
+
+161. Your service is suddenly slow. How do you debug?
+162. CPU usage 100%. What steps?
+163. DB connections exhausted. Root cause?
+164. Memory leak in prod. How to fix?
+165. One microservice is failing intermittently.
+166. Kafka lag increasing. What to do?
+167. Deadlock happening in DB.
+168. High GC pause times.
+169. JWT token validation failing randomly.
+170. How to rollback production issue safely?
+
+---
+
+If you want, next I can give:
+
+* 🔥 **Ultra-hard senior architect level questions**
+* 🎯 **Only scenario-based mock interview round**
+* 💣 **Only debugging production issues round**
+* 🧪 **Live coding + design challenge set**
+
+Tell me which level you are targeting (2-3 yrs / 5+ yrs / 8+ yrs).

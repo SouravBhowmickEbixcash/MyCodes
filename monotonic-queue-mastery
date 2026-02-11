@@ -1,0 +1,252 @@
+Absolutely — here’s your **Monotonic Queue Mastery Sheet** just like the sliding window and monotonic stack ones.
+
+Monotonic queue problems mostly involve maintaining:
+
+✅ Max/Min in a sliding window
+✅ Stream processing (online)
+✅ Dynamic window queries
+✅ Deques used as monotonic structures
+
+These often overlap heavily with sliding window but have their own pattern.
+
+---
+
+# 🧠 MONOTONIC QUEUE MASTER ROADMAP
+
+This is organized into **6 phases**:
+
+* Phase 1 — Foundation
+* Phase 2 — Window Tracking
+* Phase 3 — Sliding Window Max/Min
+* Phase 4 — Variants & Counting
+* Phase 5 — Multi-Deque Hybrid
+* Phase 6 — Interview Hard / Mastery
+
+The problems come from the official **Monotonic Queue LeetCode list**:
+
+🔗 [https://leetcode.com/problem-list/monotonic-queue/](https://leetcode.com/problem-list/monotonic-queue/)
+
+---
+
+## 🟢 PHASE 1 — FOUNDATION (Understand Deque Pattern)
+
+Learn the core idea:
+
+> A monotonic queue maintains increasing or decreasing order using a deque
+> This allows O(1) queries for current max/min in a sliding window.
+
+Solve these first:
+
+1. **LC 239** — Sliding Window Maximum
+2. **LC 862** — Shortest Subarray with Sum at Least K
+3. **LC 845** — Longest Mountain in Array (partially dq)
+4. **LC 239** *(redo with boundary pointers & pointers only solution)*
+
+**What you master here:**
+
+* Simple deque push/pop logic
+* Maintaining head/tail ordering
+* Using deque of indices
+
+---
+
+## 🟡 PHASE 2 — WINDOW MAX / WINDOW MIN
+
+Now solidify with variations:
+
+5. **LC 2090** — K Radius Subarray Averages (sliding min prefix segment)
+6. **LC 275** — H-Index II (binary + monotonic properties mixed)
+7. **LC 2162** — Closest Divide in Matrix (window + dq inside)
+
+**What you focus on:**
+
+* Adjust deque when window slides
+* Population/depuration of deque
+* Maintaining only useful candidates
+
+---
+
+## 🔵 PHASE 3 — COUNTING / Query Output
+
+Now problems where you output array results:
+
+8. **LC 862** — Redo for counting min length
+9. **LC 239** — Output sliding max per window
+10. **LC 2389** — Longest Subarray With Limit
+11. **LC 1111** — Maximum Nesting Depth (deque min around boundary)
+
+**What you master:**
+
+* Output per index
+* Queue trimming
+* Window correctness
+
+---
+
+## 🟣 PHASE 4 — DYNAMIC / VARIABLE WINDOW + Deque
+
+These combine monotonic queue plus shrinkable window:
+
+12. **LC 1000** — Minimum Cost to Merge Stones (not obvious but deque helps)
+13. **LC 2085** — Count Common Words With One Occurrence (encoded)
+14. **LC 1854** — Maximum Population Year (no window but counting variant)
+15. **LC 662** — Maximum Width of Vertical Area (missing monotonic queue but conceptual connection)
+
+*The list itself includes placeholder problems that aren’t strictly monotonic queue — but many sliding window max/min apply.*
+
+---
+
+## 🔴 PHASE 5 — HARD / DEQUE ADVANCED
+
+Now harder hybrid problems:
+
+16. **LC 862** — Redo with prefix sums and deque for minimum length
+17. **LC 239** — Redo optimized index logic
+18. **LC 1695** — Maximum Erasure Value *(needs both freq + window)*
+19. **LC 1004** — Max Consecutive Ones III *(window with deque helpful for cost tracking)*
+
+These force you to use:
+
+* Deque to enforce constraints
+* Window + pointer logic
+* Dynamic min/max tracking
+
+---
+
+## 🟤 PHASE 6 — MASTER LEVEL
+
+These are tough because the monotonic queue is part of a larger solution:
+
+20. **LC 2140** — Solving Questions With Brainpower *(stack + queue combo)*
+21. **LC 1696** — Jump Game VI *(priority queue but deque resembles pattern)*
+22. **LC 2090** — Multiple radius validations
+23. **LC 1705** — Maximum Number of Eaten Apples *(greedy + deque)*
+
+These are *meta problems* where monotonic queue is a tool, not the whole solution.
+
+---
+
+# 🧠 PRACTICE RULES
+
+## Must Learn Deque Operations
+
+### For max queue:
+
+```
+Add new value v:
+    while back not empty and back < v:
+        pop back
+    push back
+
+Remove old index i:
+    if front == i:
+        pop front
+
+Current max = arr[front]
+```
+
+---
+
+## Must Dry-Run for all deque problems
+
+Write each step like:
+
+```
+i=0 → push 1 → deque [0]
+i=1 → push 3 → pop smaller (1), deque [1]
+...
+```
+
+---
+
+# 📅 WEEKLY PRACTICE PLAN (2 weeks)
+
+| Day    | Focus                                |
+| ------ | ------------------------------------ |
+| Day 1  | Sliding Window Max basics            |
+| Day 2  | Understanding deque push/pop         |
+| Day 3  | Variants with window min             |
+| Day 4  | Output window results                |
+| Day 5  | Dynamic window with deque            |
+| Day 6  | Hybrid problems                      |
+| Day 7  | Practice 3 random deque problems     |
+| Day 8  | Interview simulations                |
+| Day 9  | Redo previously solved with dry-runs |
+| Day 10 | Hard / mixed problems                |
+| Day 11 | Mock interview session               |
+| Day 12 | Edge case optimization               |
+| Day 13 | Large input optimization             |
+| Day 14 | Patterns re-write from memory        |
+
+---
+
+# 🧠 COMMON PATTERNS TO INTERNALIZE
+
+### 1️⃣ Sliding Window Max
+
+* Always store indices in deque
+* Values in deque are in descending order
+* Front always holds index of the current max
+
+---
+
+### 2️⃣ Sliding Window Min
+
+* Same as max but ascending order
+
+---
+
+### 3️⃣ Online Queries
+
+Examples: Stock Span
+
+* Data arrives in real time
+
+---
+
+### 4️⃣ Boundary Detection
+
+Monotonic queue often answers:
+
+```
+nearest greater
+nearest smaller
+window range
+```
+
+---
+
+# 📍 QUICK Problem Categorization Cheat Sheet
+
+| Type                     | Example |
+| ------------------------ | ------- |
+| Window Max               | LC 239  |
+| Min window length        | LC 862  |
+| Window with constraint   | LC 1004 |
+| Deque + dynamic pointers | LC 1695 |
+
+---
+
+# 📌 NOTES
+
+💡 **Easy Mistake:**
+Treat normal sliding window as monotonic queue — not all problems require deque.
+
+💡 **Always ask:**
+
+> Do I need O(1) max/min queries for every sliding window move?
+
+If YES → Monotonic queue
+
+---
+
+## Want NEXT? 🚀
+
+Choose one:
+
+1. A **50-problem challenge sheet** combining monotonic queue with sliding window and monotonic stack
+2. A **pattern cheat sheet PDF template**
+3. Daily **timed practice plan** (30 days)
+4. Mock interview questions + answer patterns
+
+Just tell me which 🔥 you want next!

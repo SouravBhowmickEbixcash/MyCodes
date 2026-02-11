@@ -1,0 +1,307 @@
+Perfect. Now I’ll give you **structured, systematic, deep system-design + scalable systems + complete Spring ecosystem interview questions**.
+
+This will help you **learn while preparing**.
+
+⚠️ Only questions.
+⚠️ Deep, architect-level, scenario-driven.
+⚠️ Organized so you can prepare step-by-step.
+
+---
+
+# 🧠 SECTION 1: SYSTEM DESIGN FUNDAMENTALS (Core Concepts Deep Dive)
+
+### Scalability
+
+1. What is horizontal vs vertical scaling? Trade-offs?
+2. How do you design a system to scale from 1k to 10M users?
+3. What are bottlenecks in high-scale systems?
+4. How to estimate system capacity?
+5. How do you calculate QPS for a system?
+6. What is load shedding?
+7. What is backpressure?
+8. What is thundering herd problem?
+9. How to prevent hotspot partitioning?
+10. How do you handle traffic spikes (e.g., IPL ticket booking)?
+
+---
+
+### CAP & Distributed Systems
+
+11. Explain CAP theorem with real-world example.
+12. What is eventual consistency?
+13. What is strong consistency?
+14. How does quorum work?
+15. What is split-brain scenario?
+16. How do distributed locks work?
+17. How do you implement leader election?
+18. What is consensus algorithm?
+19. Raft vs Paxos?
+20. What happens during network partition?
+
+---
+
+### High Availability
+
+21. How do you design HA system?
+22. Active-active vs active-passive?
+23. How do you eliminate single point of failure?
+24. How do you handle region failure?
+25. What is multi-region deployment?
+26. What is RTO and RPO?
+27. How do you design disaster recovery?
+28. What is health check strategy?
+29. Liveness vs readiness probes?
+30. How do you test failover?
+
+---
+
+# 🏗 SECTION 2: ADVANCED SYSTEM DESIGN SCENARIOS
+
+### Design Deep Dive
+
+31. Design scalable notification system.
+32. Design distributed rate limiter.
+33. Design API gateway.
+34. Design service registry.
+35. Design authentication service at scale.
+36. Design logging platform like ELK.
+37. Design distributed cache.
+38. Design payment processing system.
+39. Design inventory management for e-commerce.
+40. Design booking system without overselling.
+
+---
+
+### Consistency & Transactions
+
+41. How do you maintain data consistency across microservices?
+42. How Saga pattern works in failure?
+43. What happens if Saga compensation fails?
+44. How to prevent double payment?
+45. Two-phase commit drawbacks?
+46. How do you design idempotent APIs?
+47. What is exactly-once semantics?
+48. How do you prevent race conditions in distributed systems?
+49. How to implement distributed transaction logging?
+50. Event sourcing vs CRUD?
+
+---
+
+# 🌐 SECTION 3: MICROSERVICES ARCHITECTURE (Deep)
+
+### Design Principles
+
+51. How do you split monolith into microservices?
+52. What is bounded context?
+53. How to avoid chatty services?
+54. Database per service — pros and cons?
+55. How do you handle shared data?
+56. How do you version APIs?
+57. How do you handle backward compatibility?
+58. How do you migrate database in microservices?
+59. How do you do zero downtime deployment?
+60. What is anti-corruption layer?
+
+---
+
+### Communication
+
+61. REST vs gRPC vs messaging?
+62. Synchronous vs asynchronous communication?
+63. When to use event-driven architecture?
+64. How to prevent cascading failure?
+65. Circuit breaker deep internal working?
+66. Retry with exponential backoff?
+67. What is timeout strategy?
+68. What is bulkhead pattern?
+69. How to prevent retry storm?
+70. What is service mesh and why?
+
+---
+
+# 🌱 SECTION 4: COMPLETE SPRING FRAMEWORK DEEP DIVE
+
+### Spring Core Internals
+
+71. What happens during ApplicationContext initialization?
+72. How does Spring perform dependency injection internally?
+73. BeanFactory vs ApplicationContext?
+74. What is BeanDefinition?
+75. How does Spring resolve autowiring conflicts?
+76. What is @Primary?
+77. What is @Qualifier?
+78. How does Spring handle circular dependency?
+79. When does circular dependency fail?
+80. What is prototype scope and its pitfalls?
+
+---
+
+### Bean Lifecycle Deep
+
+81. Order of bean lifecycle methods?
+82. What is InitializingBean?
+83. What is DisposableBean?
+84. How does @PostConstruct work?
+85. What is SmartLifecycle?
+86. What is BeanFactoryPostProcessor?
+87. What is BeanPostProcessor?
+88. Difference between both?
+89. How does Spring load configuration classes?
+90. What is proxyBeanMethods in @Configuration?
+
+---
+
+# 🌿 SECTION 5: SPRING BOOT DEEP INTERNALS
+
+91. How auto-configuration works internally?
+92. What is spring.factories?
+93. What is @ConditionalOnClass?
+94. How do you create custom auto-configuration?
+95. How does embedded Tomcat start?
+96. What is DispatcherServlet?
+97. How request flows from client to controller?
+98. How exception handling works?
+99. How to override default error handling?
+100. What is WebFlux vs MVC?
+
+---
+
+# 🗄 SECTION 6: SPRING DATA JPA – ADVANCED
+
+101. How does Hibernate manage entity state?
+102. What are entity states?
+103. How to debug N+1 in production?
+104. What is fetch join?
+105. When to use EntityGraph?
+106. What is transaction boundary?
+107. How does propagation REQUIRES_NEW behave?
+108. What is read-only transaction?
+109. How does isolation level impact performance?
+110. Phantom read example?
+111. What is write skew?
+112. How to handle high concurrency updates?
+113. When to use pessimistic lock?
+114. Deadlock scenario in DB?
+115. How to tune Hibernate?
+
+---
+
+# 🔐 SECTION 7: SPRING SECURITY – ENTERPRISE LEVEL
+
+116. How does security filter chain execute?
+117. What is FilterChainProxy?
+118. How to customize authentication flow?
+119. How to integrate OAuth2 server?
+120. How to secure microservices using JWT?
+121. How to implement RBAC?
+122. How to implement ABAC?
+123. How to implement multi-tenancy security?
+124. What is key rotation in JWT?
+125. How to invalidate JWT token?
+126. How to secure against CSRF in SPA?
+127. How to secure file uploads?
+128. What is CORS misconfiguration risk?
+129. How to prevent privilege escalation?
+130. How to protect against SSRF?
+
+---
+
+# 🧰 SECTION 8: PERFORMANCE & TUNING
+
+131. How to identify bottleneck in microservice?
+132. How to analyze thread dump?
+133. How to tune thread pool?
+134. How to choose pool size?
+135. What is blocking vs non-blocking?
+136. How to optimize REST API performance?
+137. How to reduce GC pauses?
+138. How to reduce DB latency?
+139. How to optimize connection pooling?
+140. What is reactive backpressure?
+
+---
+
+# 📦 SECTION 9: CACHING & REDIS
+
+141. Cache aside vs write through?
+142. What is cache stampede?
+143. What is cache penetration?
+144. What is cache eviction strategy?
+145. How Redis cluster works?
+146. What is consistent hashing?
+147. How to prevent stale cache?
+148. Distributed cache invalidation?
+149. Redis persistence modes?
+150. How to scale Redis?
+
+---
+
+# 📡 SECTION 10: KAFKA / EVENT SYSTEMS
+
+151. What is ISR?
+152. How replication works?
+153. What is leader election in Kafka?
+154. How to design partition strategy?
+155. How to handle rebalancing?
+156. What is consumer lag?
+157. How to tune Kafka for throughput?
+158. How to ensure ordering?
+159. Schema registry role?
+160. How to evolve event schema?
+
+---
+
+# 🧪 SECTION 11: REAL PRODUCTION INCIDENT QUESTIONS
+
+161. Service latency increased suddenly.
+162. DB CPU 100%.
+163. Kafka consumer lag 1M.
+164. GC pause 5 seconds.
+165. Threads stuck in BLOCKED state.
+166. Memory leak after deployment.
+167. Connection pool exhausted.
+168. Deadlock between microservices.
+169. One pod restarting repeatedly.
+170. Cache causing inconsistent data.
+
+---
+
+# 🏢 SECTION 12: ARCHITECT-LEVEL THINKING
+
+171. How to design for 100M users?
+172. How to design globally distributed system?
+173. Multi-tenant SaaS architecture?
+174. How to implement feature flags?
+175. How to implement audit logging?
+176. How to design observability platform?
+177. How to design API rate limiting at gateway?
+178. How to design fraud detection system?
+179. How to design resilient banking system?
+180. How to design high-security government system?
+
+---
+
+# 🎯 SECTION 13: CLOUD & DEVOPS (Important in Interviews)
+
+181. How does Kubernetes work?
+182. What is pod lifecycle?
+183. What is horizontal pod autoscaling?
+184. How to scale based on CPU vs custom metrics?
+185. How to design CI/CD pipeline?
+186. Blue-green vs canary?
+187. How to secure secrets in K8s?
+188. How to monitor distributed system?
+189. What is sidecar pattern?
+190. What is init container?
+
+---
+
+If you want next level preparation, I can provide:
+
+* 🔥 Complete **Interview Preparation Roadmap**
+* 🎯 30-day structured learning plan
+* 🧠 Mock interview (I ask, you answer)
+* 💣 Architect-level deep dive (FAANG-style)
+* 🏗 End-to-end system design walkthroughs
+
+Tell me your experience level (3 yrs / 5 yrs / 8+ yrs).
