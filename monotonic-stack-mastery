@@ -1,306 +1,166 @@
-Absolutely — just like the sliding-window roadmap, here is a **systematic, mastery-oriented list for Monotonic Stack problems** from the LeetCode monotonic stack list.
+Love the focus 🔥 — here is your **extended Monotonic Stack Practice Sheet** designed to take you from beginner → interview beast.
 
-I’ll organize the problems into sections by **conceptual difficulty and pattern complexity**, so you know exactly what to practice first, how to build fluency, and how to reach mastery for interviews.
-
----
-
-# 🧠 MONOTONIC STACK MASTER ROADMAP
-
-Monotonic stack often solves problems that ask for:
-
-* Next greater / next smaller elements
-* Largest rectangle problems
-* Rainwater trapping
-* Sliding window maximum / minimum
-* Tree stack constructions
-
-We will structure the problems into **6 phases**, from fundamentals to elite.
+I’ve grouped problems by pattern so you build **deep pattern recognition**, not just solve randomly.
 
 ---
 
-## 🟢 PHASE 1 — FOUNDATION (Understand the Stack Pattern)
-
-Here you learn the idea of:
-
-* Maintaining a stack that's always increasing or decreasing
-* Using stack to store indices or values to answer queries
-* Why and when stack pops elements
-
-Solve these basics first:
-
-1. **LC 496** – Next Greater Element I
-2. **LC 503** – Next Greater Element II
-3. **LC 739** – Daily Temperatures
-4. **LC 901** – Online Stock Span
-5. **LC 2208** – Maximum Slowdown
-
-**Key Ideas:**
-
-* Right-side next greater
-* Circular arrays (double traversal)
-* Real-time stack usage
+# 🧠 MONOTONIC STACK MASTER SHEET
 
 ---
 
-## 🟡 PHASE 2 — EXTENDING THE PATTERN
+## 🟢 LEVEL 1 — Foundation (Must Do First)
 
-Here stack interacts with:
+👉 Goal: Learn next greater / smaller
+👉 Difficulty: Easy–Medium
 
-* Indices
-* Distances
-* Lengths
+1. 496. Next Greater Element I
+2. 739. Daily Temperatures
+3. 503. Next Greater Element II
+4. 901. Online Stock Span
+5. 1475. Final Prices With Special Discount
+6. 1019. Next Greater Node In Linked List
+7. 1762. Buildings With an Ocean View
+8. 1944. Number of Visible People in a Queue
 
-Solve:
-
-6. **LC 1509** – Minimum Difference Between Largest and Smallest Value in Three Moves
-7. **LC 1762** – Buildings With an Ocean View
-8. **LC 1425** – Constrained Subsequence
-9. **LC 1475** – Final Prices With a Special Discount
-10. **LC 1856** – Maximum Subarray Min-Product
-
-**Skills:**
-
-* Using stack for **span/counting distances**
-* Stack based on constraints
-* Stack with custom comparisons
+✅ If these feel easy → you’re ready for interviews basics
 
 ---
 
-## 🔵 PHASE 3 — RAINWATER + RECTANGLE FAMILIES (CLASSIC)
+## 🟡 LEVEL 2 — Monotonic + Greedy
 
-Now we enter the core problems that stack excels at:
+👉 Goal: Stack with decisions
+👉 These are VERY interview popular
 
-11. **LC 84** – Largest Rectangle in Histogram
-12. **LC 85** – Maximal Rectangle
-13. **LC 42** – Trapping Rain Water
-14. **LC 42 (two-pointer comparison)** – understand both
+9. 402. Remove K Digits ⭐
+10. 316. Remove Duplicate Letters ⭐
+11. 1081. Smallest Subsequence of Distinct Characters ⭐
+12. 1673. Find the Most Competitive Subsequence
+13. 321. Create Maximum Number (Hard greedy + stack)
+14. 456. 132 Pattern ⚠️ tricky
+15. 2434. Using a Robot to Print the Lexicographically Smallest String
 
-**Key Concepts to Master:**
-
-* Monotonic stack to find boundaries
-* Height expansion and contraction
-* Left / right smaller index arrays
-
-Once you can solve **LC 84** and **LC 42** without hints → you’ve mastered the stack pattern.
+🔥 After this level your pattern recognition improves massively
 
 ---
 
-## 🟣 PHASE 4 — ADVANCED BOUNDARY STACK (DISTANCE & COUNT)
+## 🔴 LEVEL 3 — Histogram & Boundary (CORE INTERVIEW)
 
-These require more subtle stack insights:
+👉 Goal: Master left/right boundary thinking
+👉 These separate strong candidates
 
-15. **LC 901** – Online Stock Span *(redo without template)*
-16. **LC 2273** – Find Resultant Array After Removing Anagrams
-17. **LC 1963** – Minimum Number of Swaps to Make Strings Similar
-18. **LC 907** – Sum of Subarray Minimums
-19. **LC 1856** – Maximum Subarray Min-Product *(go deep)*
+16. 42. Trapping Rain Water ⭐⭐⭐
+17. 84. Largest Rectangle in Histogram ⭐⭐⭐ MUST MASTER
+18. 85. Maximal Rectangle
+19. 2866. Beautiful Towers II
+20. 1793. Maximum Score of a Good Subarray
+21. 1950. Maximum of Minimum Values in All Subarrays
 
-**Skills:**
-
-* Cumulative functions with stack
-* Stack + dynamic programming
-* Counting and summation
+💡 If you master #84 → many hard problems become easy
 
 ---
 
-## 🔴 PHASE 5 — STACK + SLIDING WINDOW
+## 🟣 LEVEL 4 — Contribution Technique (ADVANCED)
 
-Now you combine both patterns:
+👉 Goal: Count subarrays efficiently
+👉 Very common in FAANG
 
-20. **LC 239** – Sliding Window Maximum
-21. **LC 503** – Next Greater Element II *(circular window again)*
-22. **LC 84** – Largest Rectangle *(used with two-pointer logic in some solutions)*
-23. **LC 85** – Maximal Rectangle *(stack per row)*
+22. 907. Sum of Subarray Minimums ⭐⭐⭐
+23. 2104. Sum of Subarray Ranges ⭐⭐⭐
+24. 2289. Steps to Make Array Non-decreasing
+25. 1856. Maximum Subarray Min-Product
+26. 2334. Subarray With Elements Greater Than Varying Threshold
+27. 3113. Find the Number of Subarrays Where Boundary Elements Are Maximum
 
-**Key Fluency Gains:**
-
-* Deque vs stack
-* Sliding window adaptor
-* Column heights stack per row tech
-
----
-
-## 🟤 PHASE 6 — INTERVIEW / MASTER LEVEL
-
-These problems are harder and typically appear in interviews or require deeper stack insights:
-
-24. **LC 42 (again)** – Trapping Rain Water *(multiple solutions)*
-25. **LC 84 (again)** – Largest Rectangle *(optimize memory)*
-26. **LC 1966** – Binary Search Tree From Preorder Traversal
-27. **LC 654** – Maximum Binary Tree
-28. **LC 998** – Maximum Binary Tree II
-
-**Why These Are Hard:**
-
-* Stack used in constructing trees
-* Not obvious boundary problems
-* Hybrid stack + recursion
+🔥 This level = senior engineer territory
 
 ---
 
-## 🧠 SATURATION (Repetition)
+## 🔵 LEVEL 5 — Monotonic Deque (Sliding Window)
 
-After completing above phases, go back and **re-solve 10 problems randomly** without hints.
+👉 Often confused with stack — MUST know difference
 
-This internalizes the stack pattern and makes it *instinctive*.
+28. 239. Sliding Window Maximum ⭐⭐⭐
+29. 862. Shortest Subarray with Sum at Least K
+30. 1696. Jump Game VI
+31. 1425. Constrained Subsequence Sum
+32. 1438. Longest Continuous Subarray With Absolute Diff ≤ Limit
 
----
-
-# 🧠 WHY THIS ORDER WORKS
-
-## Phase 1 & 2
-
-Get you comfortable with:
-
-* Stack holding indices
-* When and why elements pop
-* Understanding boundaries
-
-## Phase 3
-
-Classic stack applications (rectangle, trapping rain water)
-
-## Phase 4
-
-More tricky use-cases like summations
-
-## Phase 5
-
-Mixed patterns — sliding window + monotonic
-
-## Phase 6
-
-Beyond boundary — constructing data structures
+💡 Companies LOVE deque problems
 
 ---
 
-# 🧠 PRACTICE RULES (Non-negotiable)
+## 🧩 LEVEL 6 — Bonus Interview Killers
 
-### Rule 1 — Never jump to solution
+👉 Do these if you want elite mastery
 
-Always do:
-
-* Try 15 minutes
-* If stuck, ask for hint
-* Then re-code
-
-### Rule 2 — Dry-run every stack solution
-
-Write the stack behavior step-by-step for:
-
-* pushes
-* pops
-* the condition
-
-Example:
-
-```
-Index: 0   1   2   3
-Value:  2   1   5   6
-Stack behavior:
-push 0
-...
-```
-
-### Rule 3 — Always write formal left/right boundary logic
-
-For a histogram problem:
-
-Left smaller = previous smaller
-Right smaller = next smaller
-
-Get them with stack **in one pass**
+33. 962. Maximum Width Ramp
+34. 2281. Sum of Total Strength of Wizards (Hard)
+35. 2454. Next Greater Element IV
+36. 1504. Count Submatrices With All Ones
+37. 1776. Car Fleet II
+38. 2865. Beautiful Towers I
+39. 1944. Number of Visible People in a Queue (reverse pass practice)
 
 ---
 
-# 🧠 COMMON STACK TEMPLATES
+# 🚀 Recommended Study Plan
 
-### 1. Next Greater Element
+### Week 1 (Foundation)
 
-```js
-for (int i = 0; i < n; i++) {
-    while (!stack.isEmpty() && arr[stack.peek()] < arr[i]) {
-        int idx = stack.pop();
-        answer[idx] = arr[i];
-    }
-    stack.push(i);
-}
-```
+* Level 1 completely
+* First half of Level 2
 
----
+### Week 2 (Core mastery)
 
-### 2. Next Smaller Element
+* Finish Level 2
+* Level 3 histogram problems
 
-Same but:
+### Week 3 (Interview ready)
 
-```js
-while (!stack.isEmpty() && arr[stack.peek()] > arr[i])
-```
+* Level 4 contribution
+* Level 5 deque
+
+### Week 4 (Elite)
+
+* Level 6 hard problems
+* Timed practice
 
 ---
 
-### 3. Largest Rectangle
+# 🧠 Pattern Recognition Cheat Codes
 
-Compute:
+When you see:
 
-```
-previousSmaller[]
-nextSmaller[]
-area = height[i] * (nextSmaller[i] - prevSmaller[i] - 1)
-```
-
----
-
-### 4. Trapping Rain Water
-
-Two approaches:
-
-* Two pointers
-* Stack
-
-Stack version:
-
-```js
-while (!stack.isEmpty() && heights[current] > heights[stack.peek()]) {
-    int bottom = stack.pop();
-    if (stack.isEmpty()) break;
-    int dist = current - stack.peek() - 1;
-    int bound = Math.min(heights[current], heights[stack.peek()]) - heights[bottom];
-    water += bound * dist;
-}
-stack.push(current);
-```
+| Clue in problem              | Think              |
+| ---------------------------- | ------------------ |
+| next greater/smaller         | monotonic stack    |
+| nearest element              | stack              |
+| histogram bars               | stack              |
+| subarray minimum/maximum sum | contribution stack |
+| sliding window max           | deque              |
+| remove digits/letters        | greedy stack       |
 
 ---
 
-# 🧠 WEEKLY PRACTICE PLAN (2 Weeks)
+# 🎯 Mastery Benchmark
 
-| Day    | Focus                                    |
-| ------ | ---------------------------------------- |
-| Day 1  | Phases 1 & 2                             |
-| Day 2  | Phase 2 + Phase 3                        |
-| Day 3  | Phase 3                                  |
-| Day 4  | Phase 3 + Phase 4                        |
-| Day 5  | Phase 4                                  |
-| Day 6  | Phase 5                                  |
-| Day 7  | Phase 5                                  |
-| Day 8  | Phase 6                                  |
-| Day 9  | Phase 6                                  |
-| Day 10 | Random Shuffle 10 problems               |
-| Day 11 | Interview simulation (3 problems, timed) |
-| Day 12 | Concepts re-write from memory            |
-| Day 13 | Hard problems only                       |
-| Day 14 | Review + explain to someone else         |
+You are **monotonic-stack strong** when:
+
+* ✅ You instantly pick increasing vs decreasing
+* ✅ You can write histogram from memory
+* ✅ You know contribution formula
+* ✅ You solve 907 without hints
+* ✅ You can derive solution in interviews
 
 ---
 
-# 🚀 Next Level Power-ups (If you want)
+## 🔥 If You Want Next-Level Help
 
-I can generate for you:
+I can give you:
 
-✅ 10 dry-run worksheets
-✅ Stack flashcards
-✅ Time-boxed interview simulation
-✅ Lightning recognition rules
+* 🧾 1-page monotonic stack template (Java)
+* 🧠 pattern decision flowchart (VERY powerful)
+* ⏱️ interview speed strategy
+* 🧪 custom mock problems for you
 
-Just tell me what format you want next!
+Just say: **"Give me the template"** 🚀
