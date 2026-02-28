@@ -1,0 +1,218 @@
+Perfect. Since you already know:
+
+* ✅ Sliding Window
+* ✅ Monotonic Stack
+* ✅ Two Pointers
+* ✅ Binary Search
+* ✅ Linked List
+
+You’re **ready for serious greedy training**, not beginner stuff.
+
+I’ll give you a **phase-wise greedy mastery roadmap** — structured like interview prep.
+
+---
+
+# 🧠 First: What You’re Training in Greedy
+
+Greedy problems usually fall into these buckets:
+
+1. **Local choice (simple decision)**
+2. **Sorting + greedy**
+3. **Intervals**
+4. **Greedy + heap**
+5. **Greedy + stack**
+6. **Greedy + binary search**
+7. **Advanced constructive greedy**
+8. **Hard multi-layer greedy (like 321)**
+
+We’ll go phase by phase.
+
+---
+
+# 🟢 PHASE 1 – Core Greedy Intuition (Warm-Up)
+
+Goal: Train your brain to spot “take best now”.
+
+1. LC 455 – Assign Cookies
+2. LC 860 – Lemonade Change
+3. LC 605 – Can Place Flowers
+4. LC 409 – Longest Palindrome   
+5. LC 680 – Valid Palindrome II  
+6. LC 122 – Best Time to Buy and Sell Stock II   
+7. LC 1431 – Kids With Greatest Number of Candies
+8. LC 1710 – Maximum Units on a Truck
+
+Focus:
+
+* Why local decision works
+* Why it doesn’t need DP
+
+---
+
+# 🟡 PHASE 2 – Sorting + Greedy (Very Important)
+
+These are interview favorites.
+
+1. LC 435 – Non-overlapping Intervals   ------------------------------>(Done till here)
+2. LC 452 – Minimum Arrows to Burst Balloons
+3. LC 406 – Queue Reconstruction by Height
+4. LC 1029 – Two City Scheduling
+5. LC 1353 – Maximum Number of Events That Can Be Attended
+6. LC 2279 – Maximum Bags With Full Capacity
+7. LC 1833 – Maximum Ice Cream Bars
+
+What you learn:
+
+* Sort by end time
+* Sort by profit
+* Sort by difference
+* Custom comparator thinking
+
+---
+
+# 🟠 PHASE 3 – Greedy + Heap (Priority Queue)
+
+These test real interview readiness.
+
+1. LC 215 – Kth Largest Element
+2. LC 1046 – Last Stone Weight
+3. LC 1642 – Furthest Building You Can Reach
+4. LC 502 – IPO
+5. LC 871 – Minimum Number of Refueling Stops
+6. LC 253 – Meeting Rooms II
+7. LC 1383 – Maximum Performance of a Team
+
+You’ll master:
+
+* When to use max heap
+* When to use min heap
+* “Replace worst with better” trick
+
+---
+
+# 🔵 PHASE 4 – Greedy + Monotonic Stack (You’re Almost Here)
+
+You already touched this area.
+
+1. LC 402 – Remove K Digits
+2. LC 316 – Remove Duplicate Letters
+3. LC 1081 – Smallest Subsequence
+4. LC 1673 – Most Competitive Subsequence
+5. LC 321 – Create Maximum Number
+6. LC 84 – Largest Rectangle in Histogram (greedy view)
+
+This is where greedy becomes powerful.
+
+---
+
+# 🟣 PHASE 5 – Greedy + Binary Search
+
+These are higher-level thinking problems.
+
+1. LC 875 – Koko Eating Bananas
+2. LC 1011 – Capacity to Ship Packages
+3. LC 1552 – Magnetic Force Between Two Balls
+4. LC 410 – Split Array Largest Sum
+5. LC 1482 – Minimum Days to Make m Bouquets
+
+These are:
+
+> Binary search on answer + greedy feasibility check
+
+Very common in FAANG.
+
+---
+
+# 🔴 PHASE 6 – Advanced Constructive Greedy
+
+Now we go into harder territory.
+
+1. LC 134 – Gas Station
+2. LC 376 – Wiggle Subsequence
+3. LC 45 – Jump Game II
+4. LC 55 – Jump Game
+5. LC 846 – Hand of Straights
+6. LC 659 – Split Array into Consecutive Subsequences
+7. LC 621 – Task Scheduler
+
+These require proof intuition.
+
+---
+
+# ⚫ PHASE 7 – Hard / Elite Greedy
+
+Now you’re interview-ready.
+
+1. LC 321 – Create Maximum Number
+2. LC 857 – Minimum Cost to Hire K Workers
+3. LC 135 – Candy
+4. LC 630 – Course Schedule III
+5. LC 871 – Refueling Stops (redo)
+6. LC 1648 – Sell Diminishing-Valued Colored Balls
+7. LC 1705 – Maximum Number of Eaten Apples
+
+These combine:
+
+* Sorting
+* Heap
+* Greedy invariants
+* Deep reasoning
+
+---
+
+# 🧠 How To Practice Properly
+
+For each problem:
+
+Ask 3 questions:
+
+1. What is the greedy choice?
+2. Why is it safe?
+3. What would break it?
+
+That builds intuition faster than reading theory.
+
+---
+
+# 🔥 Weekly Plan (If You Want Structure)
+
+Week 1:
+
+* Phase 1 + Phase 2
+
+Week 2:
+
+* Phase 3 + Phase 4
+
+Week 3:
+
+* Phase 5 + Phase 6
+
+Week 4:
+
+* Phase 7 + hard revision
+
+---
+
+# 🧩 Important Reality
+
+You already know sliding window and monotonic stack.
+
+That means:
+
+You are NOT a beginner in greedy.
+
+You’re transitioning into advanced greedy.
+
+---
+
+# 🚀 If You Want Next Level
+
+I can give you:
+
+* A printable greedy pattern cheat sheet
+* How to recognize greedy instantly in interviews
+* The mathematical reasoning behind why greedy works
+* Deep dive explanation of 321
+
+Just tell me which direction you want.

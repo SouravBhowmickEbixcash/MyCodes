@@ -17,11 +17,32 @@ public class InsuranceService {
     private final PatientRepository patientRepository;
 
     @Transactional
-    public void assignInsuranceToPatient(Insurance insurance, Long patientId){
+    public Insurance assignInsuranceToPatient(Insurance insurance, Long patientId){
         Patient patient = patientRepository.findById(patientId).orElseThrow();
-        patient.setInsurance(insurance);
+        patient.setInsurance(insurance); // dirty patient
 
         insurance.setPatient(patient); // optional
 
+        return insurance;
+
     }
+
+
+    public Insurance updateInsurance (Insurance insurance, Long patientId){
+        Patient patient = patientRepository.findById(patientId).orElseThrow();
+        patient.setInsurance(insurance); // dirty patient
+
+        insurance.setPatient(patient); // optional
+
+        return insurance;
+    }
+
+
+    public Patient removeInsurance (Long patientId){
+        Patient patient = patientRepository.findById(patientId).orElseThrow();
+        patient.setInsurance(null); // dirty patient
+
+        return patient;
+    }
+
 }
