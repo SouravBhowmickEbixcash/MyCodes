@@ -1,6 +1,6 @@
 package com.example2;
 
-public class CreditCardPayment implements PaymentMethod{
+public class PayPalPayment implements PaymentMethod{
 
 	@Override
 	public boolean validatePayment() {
@@ -10,14 +10,13 @@ public class CreditCardPayment implements PaymentMethod{
 
 	@Override
 	public void processPayment(double amount) {
-		double fee = 0.025*amount;
-		System.out.printf("Processing credit card payment: $%.2f (fee: $%.2f)%n", amount, fee);
-		
+		double fee = 0.015*amount;
+		System.out.printf("Processing paypal payment: $%.2f (fee: $%.2f)%n", amount, fee);
 	}
 
 	@Override
 	public String getReceipt() {
-		return "Card ending in ****1234";
+		return "PayPal: user@email.com";
 	}
 
 }

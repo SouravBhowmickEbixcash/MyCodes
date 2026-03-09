@@ -1,0 +1,326 @@
+Below is the **combined and expanded Backtracking Mastery Roadmap (~95–100 problems)**.
+I merged your **original 55-problem roadmap** with the **additional problems**, keeping them in the **same phases and logical order** so learning stays progressive.
+
+All problems are mainly from LeetCode.
+
+---
+
+# Complete Backtracking Mastery Roadmap (~100 Problems)
+
+## PHASE 1 — Core Backtracking Mechanics (Foundation)
+
+Goal: Understand **recursion trees, choose → explore → unchoose**.
+
+1. LC 17 — Letter Combinations of a Phone Number
+2. LC 22 — Generate Parentheses
+3. LC 401 — Binary Watch
+4. LC 93 — Restore IP Addresses
+5. LC 784 — Letter Case Permutation
+6. LC 131 — Palindrome Partitioning
+
+Additional practice:
+
+7. LC 1863 — Sum of All Subset XOR Totals
+8. LC 967 — Numbers With Same Consecutive Differences
+9. LC 1415 — The k-th Lexicographical Happy String
+10. LC 2305 — Fair Distribution of Cookies (intro pruning)
+11. LC 1079 — Letter Tile Possibilities
+12. LC 2698 — Find the Punishment Number of an Integer
+
+**Skills**
+
+* recursion tree visualization
+* path/result lists
+* base conditions
+* simple pruning
+
+---
+
+# PHASE 2 — Subsets Pattern
+
+First major pattern: **include / exclude recursion**.
+
+13. LC 78 — Subsets
+14. LC 90 — Subsets II
+15. LC 491 — Non-decreasing Subsequences
+16. LC 1239 — Maximum Length Concatenated Unique String
+17. LC 1601 — Maximum Achievable Transfer Requests
+
+Additional:
+
+18. LC 1863 — Sum of All Subset XOR Totals (revisit pattern)
+19. LC 1980 — Find Unique Binary String
+20. LC 2597 — Number of Beautiful Subsets
+21. LC 1255 — Maximum Score Words Formed by Letters
+22. LC 1774 — Closest Dessert Cost
+
+**Concepts**
+
+* include/exclude recursion
+* duplicate control
+* pruning subsets
+
+---
+
+# PHASE 3 — Permutations Pattern
+
+Classic interview pattern.
+
+23. LC 46 — Permutations
+24. LC 47 — Permutations II
+25. LC 31 — Next Permutation
+26. LC 60 — Permutation Sequence
+27. LC 1079 — Letter Tile Possibilities
+
+Additional:
+
+28. LC 267 — Palindrome Permutation II
+29. LC 949 — Largest Time for Given Digits
+30. LC 1238 — Circular Permutation in Binary Representation
+31. LC 784 — Letter Case Permutation (revisit)
+32. LC 267 — Palindrome Permutation II (optimized version)
+
+**Concepts**
+
+* visited arrays
+* swap vs visited technique
+* duplicate pruning
+
+---
+
+# PHASE 4 — Combination Pattern
+
+Most **frequent FAANG backtracking pattern**.
+
+33. LC 77 — Combinations
+34. LC 216 — Combination Sum III
+35. LC 39 — Combination Sum
+36. LC 40 — Combination Sum II
+37. LC 377 — Combination Sum IV
+38. LC 254 — Factor Combinations
+
+Additional:
+
+39. LC 17 — Letter Combinations (revisit as combination)
+40. LC 1774 — Closest Dessert Cost
+41. LC 216 — Combination Sum III (optimize pruning)
+42. LC 39 — Combination Sum (deep pruning practice)
+43. LC 40 — Combination Sum II (duplicate mastery)
+44. LC 377 — Combination Sum IV (compare with DP)
+
+**Concepts**
+
+* start index technique
+* unlimited vs single-use picks
+* duplicate skipping
+
+---
+
+# PHASE 5 — Grid Backtracking
+
+Backtracking now becomes **spatial search**.
+
+45. LC 79 — Word Search
+46. LC 212 — Word Search II
+47. LC 1219 — Path with Maximum Gold
+48. LC 980 — Unique Paths III
+49. LC 200 — Number of Islands
+50. LC 130 — Surrounded Regions
+
+Additional:
+
+51. LC 695 — Max Area of Island
+52. LC 463 — Island Perimeter
+53. LC 1034 — Coloring a Border
+54. LC 1905 — Count Sub Islands
+55. LC 1219 — Path With Maximum Gold (optimized revisit)
+
+**Concepts**
+
+* direction arrays
+* marking visited
+* DFS vs backtracking
+
+---
+
+# PHASE 6 — Constraint Satisfaction
+
+These are **NP-style problems**.
+
+56. LC 51 — N-Queens
+57. LC 52 — N-Queens II
+58. LC 37 — Sudoku Solver
+59. LC 473 — Matchsticks to Square
+60. LC 698 — Partition to K Equal Sum Subsets
+
+Additional:
+
+61. LC 36 — Valid Sudoku
+62. LC 2305 — Fair Distribution of Cookies (advanced pruning)
+63. LC 473 — Matchsticks to Square (optimized version)
+64. LC 698 — Partition to K Equal Sum Subsets (state pruning)
+65. LC 526 — Beautiful Arrangement
+
+**Concepts**
+
+* constraint propagation
+* symmetry pruning
+* state reduction
+
+---
+
+# PHASE 7 — String Partition Backtracking
+
+66. LC 131 — Palindrome Partitioning (redo optimized)
+67. LC 140 — Word Break II
+68. LC 282 — Expression Add Operators
+69. LC 320 — Generalized Abbreviation
+
+Additional:
+
+70. LC 1593 — Split String Into Max Unique Substrings
+71. LC 241 — Different Ways to Add Parentheses
+72. LC 1258 — Synonymous Sentences
+73. LC 93 — Restore IP Addresses (optimized revisit)
+
+**Concepts**
+
+* substring partitions
+* expression generation
+* recursive splitting
+
+---
+
+# PHASE 8 — Backtracking + Bitmask
+
+Advanced **state compression**.
+
+74. LC 526 — Beautiful Arrangement
+75. LC 996 — Number of Squareful Arrays
+76. LC 847 — Shortest Path Visiting All Nodes
+77. LC 1239 — Maximum Length Concatenated String (bitmask)
+
+Additional:
+
+78. LC 980 — Unique Paths III (bitmask version)
+79. LC 864 — Shortest Path to Get All Keys
+80. LC 2597 — Beautiful Subsets (bitmask optimization)
+81. LC 1980 — Unique Binary String (bitmask reasoning)
+
+**Concepts**
+
+* bitmask states
+* hybrid search
+
+---
+
+# PHASE 9 — Hard FAANG Backtracking
+
+82. LC 212 — Word Search II (Trie + Backtracking)
+83. LC 126 — Word Ladder II
+84. LC 425 — Word Squares
+85. LC 291 — Word Pattern II
+86. LC 679 — 24 Game
+
+Additional:
+
+87. LC 320 — Generalized Abbreviation (advanced)
+88. LC 996 — Squareful Arrays (optimized)
+89. LC 1718 — Construct Lexicographically Largest Sequence
+90. LC 1849 — Split String Into Descending Values
+
+---
+
+# PHASE 10 — Extreme Search
+
+91. LC 489 — Robot Room Cleaner
+92. LC 301 — Remove Invalid Parentheses
+93. LC 2698 — Find the Punishment Number of an Integer
+94. LC 1601 — Maximum Transfer Requests (optimized)
+95. LC 753 — Cracking the Safe
+
+---
+
+# PHASE 11 — Bonus Interview Crushers
+
+96. LC 332 — Reconstruct Itinerary
+97. LC 996 — Squareful Arrays (final optimized attempt)
+98. LC 1718 — Construct Lexicographically Largest Sequence (redo)
+99. LC 1849 — Splitting String Into Descending Values (redo)
+100. LC 1087 — Brace Expansion
+
+---
+
+# Master Backtracking Template
+
+```java
+void backtrack(State state){
+
+    if(base_condition){
+        result.add(copy_of_state);
+        return;
+    }
+
+    for(choice in choices){
+
+        if(invalid_choice) continue;
+
+        make_choice();
+
+        backtrack(updated_state);
+
+        undo_choice();   // backtrack
+    }
+}
+```
+
+---
+
+# Core Thinking Model
+
+Every backtracking problem must define:
+
+| Element     | Meaning                         |
+| ----------- | ------------------------------- |
+| State       | current path / partial solution |
+| Choices     | options available               |
+| Constraints | rules to prune                  |
+| Base case   | when solution is complete       |
+
+---
+
+# Ideal Execution Plan
+
+Week 1
+Phase 1–3
+
+Week 2
+Phase 4–5
+
+Week 3
+Phase 6–7
+
+Week 4
+Phase 8–9
+
+Week 5
+Phase 10–11
+
+---
+
+# Expected Outcome
+
+After completing ~100 problems:
+
+You will comfortably solve **95% of backtracking interview questions** because almost all reduce to:
+
+* permutations
+* combinations
+* subsets
+* grid DFS
+* constraint satisfaction
+
+---
+
+If you want, I can also show you **the 8 fundamental backtracking patterns that these 100 problems reduce to**.
+Once you learn those patterns, you can often solve new problems **in under 5–10 minutes**.
