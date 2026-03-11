@@ -68,4 +68,8 @@ public class Email {
 			return new Email(this);
 		}
 	}
+	
+	public static Builder builder(String to, String subject) {
+		return new Builder(to, subject);
+	}
 }

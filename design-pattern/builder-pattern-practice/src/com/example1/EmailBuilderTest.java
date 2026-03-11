@@ -3,11 +3,11 @@ package com.example1;
 public class EmailBuilderTest {
 
 	public static void main(String[] args) {
-        Email email1 = new Email.Builder("alice@example.com", "Meeting Tomorrow")
+        Email email1 = Email.builder("alice@example.com", "Meeting Tomorrow")
                 .body("Let's meet at 10am in conference room B.")
                 .build();
 
-        Email email2 = new Email.Builder("bob@example.com", "Project Update")
+        Email email2 = Email.builder("bob@example.com", "Project Update")
                 .cc("carol@example.com")
                 .cc("dave@example.com")
                 .bcc("manager@example.com")
