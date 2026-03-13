@@ -13,7 +13,7 @@ Goal: Understand **recursion trees, choose → explore → unchoose**.
 
 1. LC 17 — Letter Combinations of a Phone Number
 2. LC 22 — Generate Parentheses
-3. LC 401 — Binary Watch
+3. LC 401 — Binary Watch   ---------> Do this a bit later
 4. LC 93 — Restore IP Addresses
 5. LC 784 — Letter Case Permutation
 6. LC 131 — Palindrome Partitioning
