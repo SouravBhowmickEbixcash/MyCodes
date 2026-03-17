@@ -14,16 +14,16 @@ Goal: Understand **recursion trees, choose → explore → unchoose**.
 1. LC 17 — Letter Combinations of a Phone Number
 2. LC 22 — Generate Parentheses
 3. LC 401 — Binary Watch   ---------> Do this a bit later
-4. LC 93 — Restore IP Addresses
+4. LC 93 — Restore IP Addresses				----> Solve this again
 5. LC 784 — Letter Case Permutation
-6. LC 131 — Palindrome Partitioning
+6. LC 131 — Palindrome Partitioning   
 
 Additional practice:
 
 7. LC 1863 — Sum of All Subset XOR Totals
-8. LC 967 — Numbers With Same Consecutive Differences
+8. LC 967 — Numbers With Same Consecutive Differences	-----> Done till here
 9. LC 1415 — The k-th Lexicographical Happy String
-10. LC 2305 — Fair Distribution of Cookies (intro pruning)
+10. LC 2305 — Fair Distribution of Cookies (intro pruning) ----> Solve this latter
 11. LC 1079 — Letter Tile Possibilities
 12. LC 2698 — Find the Punishment Number of an Integer
 

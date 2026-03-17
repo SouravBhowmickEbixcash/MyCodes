@@ -1,0 +1,606 @@
+Sourav, with **4–5 hours daily and ~8 months**, you are actually in a **very strong position**. If you use the time well, you can reach:
+
+* **Advanced DSA**
+* **Above-intermediate System Design**
+* **Strong Java Backend (Spring + Microservices)**
+
+That combination is exactly what **big backend roles** expect.
+
+I’ll give you a **realistic 8-month roadmap** with **daily structure + monthly milestones**.
+
+---
+
+# Overall Strategy (Very Important)
+
+Your preparation should have **3 pillars**:
+
+| Area                | Importance                  |
+| ------------------- | --------------------------- |
+| DSA                 | Clears coding rounds        |
+| System Design       | Senior engineering thinking |
+| Backend Development | Real-world engineering      |
+
+### Ideal Time Split (Daily 4–5 hrs)
+
+```
+DSA → 2 hrs
+System Design → 1–1.5 hrs
+Backend / Spring / Projects → 1–1.5 hrs
+```
+
+---
+
+# Month 1 — Backtracking + Trees
+
+### DSA (2 hrs daily)
+
+Finish **Backtracking completely**.
+
+Topics:
+
+* recursion basics
+* subsets
+* permutations
+* combinations
+* grid backtracking
+* constraint problems
+
+Problems:
+
+```
+LC 17
+LC 22
+LC 78
+LC 90
+LC 46
+LC 47
+LC 39
+LC 40
+LC 79
+LC 51
+LC 37
+LC 131
+```
+
+Then start **Trees**:
+
+Topics:
+
+```
+Tree traversals
+DFS
+BFS
+Height / depth
+Binary tree recursion
+```
+
+Problems:
+
+```
+LC 104
+LC 543
+LC 226
+LC 101
+LC 236
+LC 199
+LC 102
+LC 98
+LC 230
+```
+
+---
+
+### System Design (1 hr daily)
+
+Start **LLD foundations**.
+
+Learn:
+
+```
+OOP principles
+SOLID principles
+UML basics
+Design patterns intro
+```
+
+Important patterns:
+
+```
+Factory
+Singleton
+Strategy
+Observer
+Builder
+Decorator
+```
+
+Resources:
+
+* Refactoring Guru
+* Head First Design Patterns
+
+---
+
+### Backend (1–1.5 hrs)
+
+Deep dive **Spring Boot basics**:
+
+Learn:
+
+```
+Spring architecture
+Dependency injection
+Spring beans
+@RestController
+Spring Boot auto configuration
+Spring Data JPA
+```
+
+Mini project:
+
+```
+User service
+CRUD APIs
+MySQL integration
+```
+
+---
+
+# Month 2 — Trees Advanced + Start Graphs
+
+### DSA
+
+Trees advanced:
+
+```
+Lowest Common Ancestor
+Path Sum
+Diameter
+Serialize / Deserialize tree
+```
+
+Problems:
+
+```
+LC 124
+LC 236
+LC 297
+LC 437
+LC 662
+```
+
+Then start **Graphs**:
+
+Concepts:
+
+```
+Graph representation
+DFS
+BFS
+Connected components
+```
+
+Problems:
+
+```
+LC 200
+LC 695
+LC 133
+LC 994
+LC 547
+```
+
+---
+
+### System Design
+
+Start **LLD design problems**.
+
+Examples:
+
+Design:
+
+```
+Parking Lot
+Library System
+Elevator System
+ATM
+```
+
+Focus on:
+
+```
+class design
+interfaces
+extensibility
+```
+
+---
+
+### Backend
+
+Spring Boot deeper:
+
+Learn:
+
+```
+DTO pattern
+Exception handling
+Validation
+Spring Security basics
+JWT authentication
+```
+
+Project:
+
+```
+Authentication service
+JWT login
+User roles
+```
+
+---
+
+# Month 3 — Graph Algorithms
+
+### DSA
+
+Learn important graph algorithms:
+
+```
+Topological sort
+Cycle detection
+Shortest path (BFS)
+Dijkstra
+Union Find
+```
+
+Problems:
+
+```
+LC 207
+LC 210
+LC 743
+LC 684
+LC 721
+LC 1584
+LC 785
+```
+
+---
+
+### System Design
+
+Start **High Level Design fundamentals**.
+
+Topics:
+
+```
+Scalability
+Load balancing
+Caching
+Database sharding
+CAP theorem
+```
+
+Learn components:
+
+```
+Redis
+Kafka
+CDN
+API Gateway
+```
+
+---
+
+### Backend
+
+Microservices basics.
+
+Learn:
+
+```
+Service discovery
+API Gateway
+Inter-service communication
+Docker basics
+```
+
+Build:
+
+```
+User service
+Order service
+Communication via REST
+```
+
+---
+
+# Month 4 — Dynamic Programming
+
+This is the **hardest DSA month**.
+
+Topics:
+
+```
+DP basics
+Memoization
+Tabulation
+Knapsack
+Subsequence DP
+Grid DP
+```
+
+Problems:
+
+```
+LC 70
+LC 198
+LC 322
+LC 300
+LC 1143
+LC 416
+LC 518
+LC 72
+LC 62
+LC 221
+```
+
+---
+
+### System Design
+
+Start **real system design problems**.
+
+Design:
+
+```
+URL shortener
+Rate limiter
+Chat system
+Notification system
+```
+
+Focus on:
+
+```
+scalability
+tradeoffs
+bottlenecks
+```
+
+---
+
+### Backend
+
+Microservices advanced:
+
+Learn:
+
+```
+Feign client
+Circuit breaker
+Resilience4j
+Service registry
+```
+
+Project improvement.
+
+---
+
+# Month 5 — Advanced DSA
+
+Topics:
+
+```
+Bit manipulation
+Advanced greedy
+Heaps
+Interval problems
+```
+
+Problems:
+
+```
+LC 136
+LC 260
+LC 215
+LC 347
+LC 435
+LC 452
+LC 253
+LC 621
+```
+
+Also continue **contest participation weekly**.
+
+---
+
+### System Design
+
+Advanced topics:
+
+```
+Distributed locking
+Message queues
+Event driven architecture
+Consistency models
+```
+
+Design:
+
+```
+Uber
+Instagram feed
+File storage
+```
+
+---
+
+### Backend
+
+Learn:
+
+```
+Kafka
+Redis caching
+Rate limiting
+```
+
+Project:
+
+Add
+
+```
+Redis caching
+Kafka event system
+```
+
+---
+
+# Month 6 — Interview Simulation
+
+### DSA
+
+Focus on:
+
+```
+medium + medium-hard problems
+mixed patterns
+```
+
+Also revise:
+
+```
+Sliding window
+Binary search
+Graphs
+DP
+Trees
+```
+
+---
+
+### System Design
+
+Practice explaining systems.
+
+Design:
+
+```
+YouTube
+Twitter
+WhatsApp
+Google Docs
+```
+
+Practice:
+
+```
+drawing architecture
+tradeoffs
+scaling strategy
+```
+
+---
+
+### Backend
+
+Make **one strong project**:
+
+Example:
+
+```
+E-commerce microservice system
+```
+
+Services:
+
+```
+User
+Product
+Order
+Payment
+Notification
+```
+
+Use:
+
+```
+Spring Boot
+Docker
+Redis
+Kafka
+MySQL
+```
+
+---
+
+# Month 7–8 — Final Polishing
+
+Focus on:
+
+### DSA
+
+* contests weekly
+* revise all patterns
+
+### System Design
+
+* mock interviews
+* architecture discussions
+
+### Backend
+
+* polish project
+* understand internals
+
+---
+
+# By End of 8 Months You Should Reach
+
+```
+DSA → Advanced
+System Design → Above Intermediate
+Backend → Strong
+```
+
+That profile is **very competitive for backend roles**.
+
+---
+
+# Important Habit
+
+Every week do:
+
+```
+1 contest
+1 system design problem
+1 backend feature
+```
+
+This keeps **all three skills active**.
+
+---
+
+# Final Advice
+
+You already solved **~390 problems**, which is a huge base.
+
+Your next growth will come from:
+
+* **Trees**
+* **Graphs**
+* **DP**
+* **System design thinking**
+
+If you stay consistent **4–5 hrs daily for 8 months**, you can become a **very strong backend engineer candidate**.
+
+---
+
+If you want, I can also show you something **very powerful for your stage**:
+
+**The exact 15 DSA patterns that cover ~85% of interview questions.**
+
+Knowing them will make your remaining DSA journey **much faster.**
