@@ -75,8 +75,8 @@ Classic interview pattern.
 Additional:
 
 28. LC 267 — Palindrome Permutation II
-29. LC 949 — Largest Time for Given Digits
-30. LC 1238 — Circular Permutation in Binary Representation
+29. LC 949 — Largest Time for Given Digits    ----> Do this later
+30. LC 1238 — Circular Permutation in Binary Representation    ----> With bit manipulation
 31. LC 784 — Letter Case Permutation (revisit)
 32. LC 267 — Palindrome Permutation II (optimized version)
 
@@ -95,8 +95,8 @@ Most **frequent FAANG backtracking pattern**.
 33. LC 77 — Combinations
 34. LC 216 — Combination Sum III
 35. LC 39 — Combination Sum
-36. LC 40 — Combination Sum II
-37. LC 377 — Combination Sum IV
+36. LC 40 — Combination Sum II    ------> done till here
+37. LC 377 — Combination Sum IV     -------> This needs DP and memoisation
 38. LC 254 — Factor Combinations
 
 Additional:
