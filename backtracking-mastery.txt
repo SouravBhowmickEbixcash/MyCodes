@@ -121,9 +121,9 @@ Additional:
 Backtracking now becomes **spatial search**.
 
 45. LC 79 — Word Search
-46. LC 212 — Word Search II
+46. LC 212 — Word Search II    -----> Have to learn trie for this
 47. LC 1219 — Path with Maximum Gold
-48. LC 980 — Unique Paths III
+48. LC 980 — Unique Paths III 		-------> Done till here
 49. LC 200 — Number of Islands
 50. LC 130 — Surrounded Regions
 
