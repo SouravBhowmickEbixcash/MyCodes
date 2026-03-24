@@ -22,6 +22,10 @@ public class ApiError {
         this.status = status;
     }
 
+    public static Builder builder(){
+        return new Builder();
+    }
+
     public static class Builder {
         private String error;
         private HttpStatus status;

@@ -123,7 +123,7 @@ Backtracking now becomes **spatial search**.
 45. LC 79 — Word Search
 46. LC 212 — Word Search II    -----> Have to learn trie for this
 47. LC 1219 — Path with Maximum Gold
-48. LC 980 — Unique Paths III 		-------> Done till here
+48. LC 980 — Unique Paths III 		
 49. LC 200 — Number of Islands
 50. LC 130 — Surrounded Regions
 
@@ -131,7 +131,7 @@ Additional:
 
 51. LC 695 — Max Area of Island
 52. LC 463 — Island Perimeter
-53. LC 1034 — Coloring a Border
+53. LC 1034 — Coloring a Border			-------> Done till here
 54. LC 1905 — Count Sub Islands
 55. LC 1219 — Path With Maximum Gold (optimized revisit)
 
