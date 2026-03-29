@@ -34,6 +34,19 @@ public class JwtService {
                 .compact();
     }
 
+    public boolean isTokenValid(String token){
+        try{
+            Jwts.parser()
+                    .verifyWith(getSecretKey())
+                    .build()
+                    .parseSignedClaims(token);
+
+            return true;
+        }catch (Exception e) {
+            return false;
+        }
+    }
+
     public Long getUserIdFromToken(String token){
         Claims claims = Jwts.parser()
                 .verifyWith(getSecretKey())
