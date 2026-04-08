@@ -1,0 +1,373 @@
+Perfect — now I’ll give you a **single, structured MASTER DOCUMENT** that combines:
+
+✅ Phase-wise learning
+✅ Theory questions (deep interview-level)
+✅ 60 curated problems (easy → ultra hard)
+✅ What to focus at each phase
+✅ Exact mastery path
+
+This is basically your **end-to-end Stream API interview prep guide**.
+
+---
+
+# 🚀 PHASE 0: PREREQUISITES
+
+## 🧠 Theory
+
+* What is a Functional Interface?
+* What are:
+
+  * Predicate
+  * Function
+  * Consumer
+  * Supplier
+* What is Lambda expression?
+* What is method reference?
+
+---
+
+## 🧪 Practice
+
+1. Write lambda for:
+
+   * even check
+   * string length
+2. Convert anonymous class → lambda
+3. Use method reference for printing
+
+---
+
+# 🧠 PHASE 1: STREAM BASICS
+
+## 🧠 Theory (Very Important)
+
+* What is Stream API?
+* Stream vs Collection
+* Internal vs External iteration
+* What is lazy evaluation?
+* What is a pipeline?
+* Can streams be reused? Why not?
+* What is terminal operation?
+
+---
+
+## 🧪 Practice (Easy)
+
+1. Filter even numbers
+2. Convert to uppercase
+3. Count elements > X
+4. Find first element
+5. Find max/min
+
+---
+
+# ⚙️ PHASE 2: INTERMEDIATE OPERATIONS
+
+## 🧠 Theory
+
+* `map()` vs `flatMap()` ⭐
+* Stateless vs Stateful operations
+* Why `sorted()` is stateful?
+* What does `distinct()` use internally?
+* What is `peek()`?
+
+---
+
+## 🧪 Practice
+
+### Easy
+
+6. Square numbers
+7. Remove duplicates
+8. Sort integers
+
+### Medium
+
+9. Flatten list of lists
+10. Extract employee names
+11. Convert List<String> → List<Integer>
+12. Sort employees by salary
+
+---
+
+# 🔚 PHASE 3: TERMINAL OPERATIONS
+
+## 🧠 Theory
+
+* `forEach()` vs `collect()`
+* `reduce()` internal working ⭐
+* Identity, accumulator, combiner
+* Short-circuit operations
+* Why `forEach` is unsafe in parallel?
+
+---
+
+## 🧪 Practice
+
+### Easy
+
+13. Sum using reduce
+14. Find max/min
+15. anyMatch example
+
+### Medium
+
+16. Product of elements
+17. Concatenate strings
+18. First non-repeating character
+
+### Hard
+
+19. Factorial using reduce
+
+---
+
+# 🏗️ PHASE 4: COLLECTORS (🔥 MOST IMPORTANT)
+
+## 🧠 Theory
+
+* What is Collector?
+* Components:
+
+  * supplier
+  * accumulator
+  * combiner
+  * finisher
+* `groupingBy` vs `partitioningBy`
+* Downstream collectors
+* Mutable vs Immutable reduction
+
+---
+
+## 🧪 Practice
+
+### Easy
+
+20. List → Set
+21. Join strings
+
+### Medium
+
+22. Group numbers by even/odd
+23. Group strings by length
+24. Count frequency of elements
+25. Convert List → Map
+
+### Hard
+
+26. Group employees by department
+27. Count employees per department
+28. Highest salary per department
+29. Sort within groups
+30. Group anagrams ⭐
+
+---
+
+# ⚡ PHASE 5: PARALLEL STREAMS
+
+## 🧠 Theory
+
+* What is `parallelStream()`?
+* ForkJoinPool
+* Spliterator
+* When parallel is slower?
+* Race conditions
+
+---
+
+## 🧪 Practice
+
+31. Convert sequential → parallel
+32. Identify unsafe stream usage
+33. Benchmark parallel vs sequential
+
+---
+
+# 🧬 PHASE 6: ADVANCED STREAMS
+
+## 🧠 Theory
+
+* Primitive streams vs boxed
+* Infinite streams
+* Optional + streams
+* Stream fusion ⭐
+* Pipeline execution internals
+
+---
+
+## 🧪 Practice
+
+### Medium
+
+34. Fibonacci using streams
+35. Infinite random numbers
+36. Top K elements
+
+### Hard
+
+37. Custom collector ⭐
+38. Sliding window
+39. Running sum
+
+---
+
+# 💥 PHASE 7: INTERVIEW PROBLEMS
+
+---
+
+## 🟢 EASY
+
+40. Count frequency
+41. Find duplicates
+42. Unique elements
+43. Remove nulls
+44. Join strings
+
+---
+
+## 🟡 MEDIUM (🔥 MOST ASKED)
+
+45. First non-repeating character ⭐
+46. Second highest number
+47. Top 3 numbers
+48. Longest string
+49. Reverse words
+50. Sort map by values
+51. Convert List → Map with duplicates
+52. Group by multiple fields
+53. Partition primes/non-primes
+
+---
+
+## 🔴 HARD (🔥 TOP COMPANY)
+
+54. Flatten nested objects
+55. Intersection of two lists
+56. Union of two lists
+57. Merge two lists → Map
+58. Second highest salary per department ⭐
+59. Top N employees
+60. Average salary per department
+61. Department with highest salary sum
+
+---
+
+# 🧠 PHASE 8: ULTRA HARD (EXPERT LEVEL)
+
+62. Multi-level grouping
+63. Leaderboard system
+64. Log processing system
+65. Nested JSON → flat transformation
+66. Recommendation system logic
+67. LRU cache using streams
+
+---
+
+# 🧠 CRITICAL INTERVIEW THEORY (MUST MASTER)
+
+---
+
+## 🔥 STREAM INTERNALS
+
+* Does each operation create new loop?
+  👉 ❌ No → **Loop fusion (single pass)**
+
+* When does execution start?
+  👉 Only at terminal operation
+
+---
+
+## 🔥 map vs flatMap
+
+| map            | flatMap  |
+| -------------- | -------- |
+| 1 → 1 mapping  | 1 → many |
+| returns nested | flattens |
+
+---
+
+## 🔥 reduce vs collect
+
+| reduce             | collect                 |
+| ------------------ | ----------------------- |
+| immutable          | mutable                 |
+| simple aggregation | complex transformations |
+
+---
+
+## 🔥 groupingBy
+
+* Internally uses:
+
+```java
+Map<K, List<V>>
+```
+
+---
+
+## 🔥 Parallel Streams
+
+* No ordering guarantee
+* Needs stateless operations
+* Avoid side effects
+
+---
+
+# 📅 FINAL MASTER PLAN (14 DAYS)
+
+## Week 1
+
+* Day 1: Basics
+* Day 2: Intermediate ops
+* Day 3: Terminal ops
+* Day 4–5: Collectors
+* Day 6–7: Practice (20 problems)
+
+---
+
+## Week 2
+
+* Day 8: Parallel streams
+* Day 9: Advanced concepts
+* Day 10–12: Medium + Hard problems
+* Day 13: Mock interview
+* Day 14: Revision + weak areas
+
+---
+
+# 🎯 FINAL STRATEGY
+
+When solving ANY problem:
+
+### Think like this:
+
+1. What to **filter**
+2. What to **transform**
+3. How to **collect**
+
+---
+
+# 💡 GOLDEN RULE
+
+👉 Streams are NOT about syntax
+👉 They are about **data transformation thinking**
+
+---
+
+# 🚀 NEXT STEP
+
+Now choose one:
+
+### 🔥 Option 1
+
+👉 “Give me solutions for top 15 problems”
+
+### 🔥 Option 2
+
+👉 “Take my mock interview (Amazon level)”
+
+### 🔥 Option 3
+
+👉 “Give me real-world project using streams”
+
+I’ll take you to **expert level from here** 💯
