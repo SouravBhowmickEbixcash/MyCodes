@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="iWHrSwUbPU0TXCZ6ubYF">
+    <mxGraphModel dx="860" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="2.5" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;Design Parking Lot&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="558" x="750" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Functional Requirements :&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;1) Support multiple floors -&amp;gt; configurable parking spots&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;2) Supports multiple vehicle types (bikes, cars and trucks)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;3) Parking spots should be classified based on the size. And also assigned based on that.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;4) Automatically assign parking spots based on available spots.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;5) Issue parking ticket upon vehicle entry and track the entry and exit times.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;6) Calculate parking fees based on duration, also it should support different types parking fees strategies&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;7) support querying and displaying real time availability of parking spot.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;8) Parking requests can be hardcoded in demo class&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Non-Functional Requirements :&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;1) Should follow Object Oriented Principles with clear separation of concerns.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;2) Should handle concurrent entry/exit events without race condition.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;3) Should be modular and extensible for future enhancements.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;4) Should be thread safe for concurrent access.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;5) Should be testable in isolation.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="880" width="520" x="60" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-4" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Enumeration&amp;gt;&amp;gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;VehicleSize&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="138" width="180" x="390" y="1980" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-5" parent="s8ssBR6j2gPmaV74WJfr-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="SMALL" vertex="1">
+          <mxGeometry height="26" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-6" parent="s8ssBR6j2gPmaV74WJfr-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="MEDIUM" vertex="1">
+          <mxGeometry height="26" width="180" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-7" parent="s8ssBR6j2gPmaV74WJfr-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="LARGE" vertex="1">
+          <mxGeometry height="26" width="180" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-8" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Abstract&amp;gt;&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Vehicle&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="180" x="770" y="1780" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-16" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Bike&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="110" x="650" y="2024" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-17" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Car&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="110" x="820" y="2024" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-18" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Truck&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="110" x="980" y="2024" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-19" edge="1" parent="1" source="s8ssBR6j2gPmaV74WJfr-16" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.328;entryY=0.96;entryDx=0;entryDy=0;entryPerimeter=0;" target="s8ssBR6j2gPmaV74WJfr-9" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="700" y="1950" as="sourcePoint" />
+            <mxPoint x="690" y="1930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-21" edge="1" parent="1" source="s8ssBR6j2gPmaV74WJfr-17" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.409;exitY=0.02;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.422;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="s8ssBR6j2gPmaV74WJfr-9" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="944" y="2000" as="sourcePoint" />
+            <mxPoint x="890" y="1910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-22" edge="1" parent="1" source="s8ssBR6j2gPmaV74WJfr-18" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.622;entryY=1.02;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="s8ssBR6j2gPmaV74WJfr-9" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="910" y="1970" as="sourcePoint" />
+            <mxPoint x="940" y="2064" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-9" parent="1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;- String licenceNumber&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- VehicleSize size&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="180" x="770" y="1830" as="geometry" />
+        </mxCell>
+        <mxCell id="s8ssBR6j2gPmaV74WJfr-23" edge="1" parent="1" source="s8ssBR6j2gPmaV74WJfr-9" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s8ssBR6j2gPmaV74WJfr-4" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="1870" />
+            </Array>
+            <mxPoint x="700" y="1950" as="sourcePoint" />
+            <mxPoint x="860" y="1950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
