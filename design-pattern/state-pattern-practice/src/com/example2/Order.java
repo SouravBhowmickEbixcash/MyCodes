@@ -1,14 +1,12 @@
 package com.example2;
 
-import java.util.UUID;
-
 public class Order {
 	private String orderId;
 	private OrderState state;
 	
 	
-	public Order() {
-		this.orderId = UUID.randomUUID().toString();
+	public Order(String orderId) {
+		this.orderId = orderId;
 		this.state = new PlacedState();
 	}
 	
@@ -18,5 +16,21 @@ public class Order {
 	
 	public String getOrderId() {
 		return this.orderId;
+	}
+	
+	public void pay() {
+		this.state.pay(this);
+	}
+	
+	public void ship() {
+		this.state.ship(this);
+	}
+	
+	public void deliver() {
+		this.state.deliver(this);
+	}
+	
+	public void cancel() {
+		this.state.cancel(this);
 	}
 }

@@ -21,7 +21,8 @@ public class PlacedState implements OrderState{
 
 	@Override
 	public void cancel(Order order) {
-		// TODO Auto-generated method stub
+		System.out.println("Order [" + order.getOrderId() + "] cancelled!!");
+		order.setState(new CancelledState());
 		
 	}
 
